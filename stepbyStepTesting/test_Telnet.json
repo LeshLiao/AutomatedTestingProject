@@ -1,0 +1,604 @@
+{
+    "test Suite": "Telnet test cases",
+    "description": "auto test config_0303",
+    "date": "2022/02/24",
+    "version": "v1.0.1",
+    "test_telnetCommand": [
+        {
+            "test_case" : "Get FWVersionDDP",
+            "command": "FWVersionDDP",
+            "telnet_cmd": "~XX122 1",
+            "expectedInterface": "Ok",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get LampHoursTotal",
+            "command": "LampHoursTotal",
+            "telnet_cmd": "~XX108 1",
+            "expectedInterface": "Ok",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get CurrentInputSource",
+            "command": "CurrentInputSource",
+            "telnet_cmd": "~XX121 1",
+            "expectedInterface": "Ok",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Audio Mute(03) on",
+            "command": "Mute",
+            "telnet_cmd": "~XX03 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Audio Mute(03) off",
+            "command": "Mute",
+            "telnet_cmd": "~XX03 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Audio Mute(80) on",
+            "command": "Mute",
+            "telnet_cmd": "~XX80 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Audio Mute(80) off",
+            "command": "Mute",
+            "telnet_cmd": "~XX80 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set AVMute on",
+            "command": "AVMute",
+            "telnet_cmd": "~XX02 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set AVMute off",
+            "command": "AVMute",
+            "telnet_cmd": "~XX02 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set 3D Mode to off",
+            "command": "ThreeDMode",
+            "telnet_cmd": "~XX230 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set 3D Mode to on",
+            "command": "ThreeDMode",
+            "telnet_cmd": "~XX230 4",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set 3D Sync. Invert to off",
+            "command": "ThreeDSyncInvert",
+            "telnet_cmd": "~XX231 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set 3D Sync. Invert to on",
+            "command": "ThreeDSyncInvert",
+            "telnet_cmd": "~XX231 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set 3D Format to Auto",
+            "command": "ThreeDFormat",
+            "telnet_cmd": "~XX405 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set 3D Format to SBS",
+            "command": "",
+            "telnet_cmd": "~XX405 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Brightness(21) to 50",
+            "command": "Brightness",
+            "telnet_cmd": "~XX21 50",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Brightness(21) to 0",
+            "command": "Brightness",
+            "telnet_cmd": "~XX21 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Brightness(46) plus",
+            "command": "Brightness",
+            "telnet_cmd": "~XX46 2",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Brightness(46) minus",
+            "command": "Brightness",
+            "telnet_cmd": "~XX46 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Brightness(125) to 50",
+            "command": "Brightness",
+            "telnet_cmd": "~XX125 50",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Brightness(125) to 0",
+            "command": "Brightness",
+            "telnet_cmd": "~XX125 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Contrast(22) to 50",
+            "command": "Contrast",
+            "telnet_cmd": "~XX22 50",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Contrast(22) to 0",
+            "command": "Contrast",
+            "telnet_cmd": "~XX22 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Contrast(47) plus",
+            "command": "Contrast",
+            "telnet_cmd": "~XX47 2",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Contrast(47) minus",
+            "command": "Contrast",
+            "telnet_cmd": "~XX47 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Contrast(126) to 50",
+            "command": "Contrast",
+            "telnet_cmd": "~XX126 50",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Contrast(126) to 0",
+            "command": "Contrast",
+            "telnet_cmd": "~XX126 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Power mode to Active",
+            "command": "PowerModeStandby",
+            "telnet_cmd": "~XX114 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Power mode to Eco",
+            "command": "PowerModeStandby",
+            "telnet_cmd": "~XX114 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Gamma to Video",
+            "command": "Gamma",
+            "telnet_cmd": "~XX35 2",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Gamma to Film",
+            "command": "Gamma",
+            "telnet_cmd": "~XX35 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set BrilliantColor to 5",
+            "command": "BrilliantColor",
+            "telnet_cmd": "~XX34 5",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set BrilliantColor to 10",
+            "command": "BrilliantColor",
+            "telnet_cmd": "~XX34 10",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set DisplayMode to Presentation",
+            "command": "DisplayMode",
+            "telnet_cmd": "~XX20 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set DisplayMode to Cinema",
+            "command": "DisplayMode",
+            "telnet_cmd": "~XX20 3",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get DisplayMode, expectedInterface:Presentation(1)",
+            "command": "DisplayMode",
+            "telnet_cmd": "~XX123 1",
+            "expectedInterface": "Ok1",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set ColorSpace to RGB (0-255)",
+            "command": "ColorSpace",
+            "telnet_cmd": "~XX37 2",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set ColorSpace to Auto",
+            "command": "ColorSpace",
+            "telnet_cmd": "~XX37 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Sharpness to 15",
+            "command": "Sharpness",
+            "telnet_cmd": "~XX23 15",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Sharpness to 0",
+            "command": "Sharpness",
+            "telnet_cmd": "~XX23 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get ProjectionMode",
+            "command": "ProjectionMode",
+            "telnet_cmd": "~XX129 1",
+            "expectedInterface": "Ok0",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set DigitalZoomPlus to Plus",
+            "command": "DigitalZoomPlus",
+            "telnet_cmd": "~XX05 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set DigitalZoomMinus to Minus",
+            "command": "DigitalZoomMinus",
+            "telnet_cmd": "~XX06 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set HKeystone(65) to 2",
+            "command": "HKeystone",
+            "telnet_cmd": "~XX65 2",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set HKeystone(65) to 0",
+            "command": "HKeystone",
+            "telnet_cmd": "~XX65 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get HKeystone(543_4)",
+            "command": "HKeystone",
+            "telnet_cmd": "~XX543 4",
+            "expectedInterface": "Ok2",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set VKeystone(66) to 2",
+            "command": "VKeystone",
+            "telnet_cmd": "~XX66 2",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set VKeystone(66) to 0",
+            "command": "VKeystone",
+            "telnet_cmd": "~XX66 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get VKeystone(543_3)",
+            "command": "VKeystone",
+            "telnet_cmd": "~XX543 3",
+            "expectedInterface": "Ok2",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set HImageShift(63) to 2",
+            "command": "HImageShift",
+            "telnet_cmd": "~XX63 2",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get HImageShift(543_1)",
+            "command": "HImageShift",
+            "telnet_cmd": "~XX543 1",
+            "expectedInterface": "Ok2",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set VImageShift(64) to 2",
+            "command": "VImageShift",
+            "telnet_cmd": "~XX64 2",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get VImageShift(543_2)",
+            "command": "VImageShift",
+            "telnet_cmd": "~XX543 2",
+            "expectedInterface": "Ok2",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set GeometricBackgroundColor to Blue",
+            "command": "GeometricBackgroundColor",
+            "telnet_cmd": "~XX104 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set GeometricBackgroundColor to None",
+            "command": "GeometricBackgroundColor",
+            "telnet_cmd": "~XX104 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set WallColor to Light Green",
+            "command": "WallColor",
+            "telnet_cmd": "~XX506 3",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set WallColor to Off",
+            "command": "WallColor",
+            "telnet_cmd": "~XX506 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Volume to 5",
+            "command": "Volume",
+            "telnet_cmd": "~XX81 5",
+            "expectedInterface": "",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Volume to 0",
+            "command": "Volume",
+            "telnet_cmd": "~XX81 0",
+            "expectedInterface": "",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Volume(140_18) to Plus",
+            "command": "Volume",
+            "telnet_cmd": "~XX140 18",
+            "expectedInterface": "",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Volume(140_17) to Minus",
+            "command": "Volume",
+            "telnet_cmd": "~XX140 17",
+            "expectedInterface": "",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set DirectPowerOn to On",
+            "command": "DirectPowerOn",
+            "telnet_cmd": "~XX105 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set DirectPowerOn to Off",
+            "command": "DirectPowerOn",
+            "telnet_cmd": "~XX105 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Set12vTrigger to On",
+            "command": "Set12vTrigger",
+            "telnet_cmd": "~XX192 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Set12vTrigger to Off",
+            "command": "Set12vTrigger",
+            "telnet_cmd": "~XX192 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set SleepTimerMin to 990",
+            "command": "SleepTimerMin",
+            "telnet_cmd": "~XX107 990",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set SleepTimerMin to 0",
+            "command": "SleepTimerMin",
+            "telnet_cmd": "~XX107 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set HighAltitude to On",
+            "command": "HighAltitude",
+            "telnet_cmd": "~XX101 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set HighAltitude to Off",
+            "command": "HighAltitude",
+            "telnet_cmd": "~XX101 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Color to 50",
+            "command": "Color",
+            "telnet_cmd": "~XX45 50",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Color to 0",
+            "command": "Color",
+            "telnet_cmd": "~XX45 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set DDPLanguage to Traditional Chinese",
+            "command": "DDPLanguage",
+            "telnet_cmd": "~XX70 13",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set DDPLanguage to English",
+            "command": "DDPLanguage",
+            "telnet_cmd": "~XX70 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set AutoPowerOffMin to 180",
+            "command": "AutoPowerOffMin",
+            "telnet_cmd": "~XX106 180",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set AutoPowerOffMin to 0",
+            "command": "AutoPowerOffMin",
+            "telnet_cmd": "~XX106 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set AutoSource to On",
+            "command": "AutoSource",
+            "telnet_cmd": "~XX563 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set AutoSource to Off",
+            "command": "AutoSource",
+            "telnet_cmd": "~XX563 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Freeze to On",
+            "command": "Freeze",
+            "telnet_cmd": "~XX04 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Freeze to Off",
+            "command": "Freeze",
+            "telnet_cmd": "~XX04 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Logo to User",
+            "command": "Logo",
+            "telnet_cmd": "~XX82 2",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set Logo to Default",
+            "command": "Logo",
+            "telnet_cmd": "~XX82 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set informationHide to On",
+            "command": "informationHide",
+            "telnet_cmd": "~XX102 1",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Set informationHide to Off",
+            "command": "informationHide",
+            "telnet_cmd": "~XX102 0",
+            "expectedInterface": "P",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get SerialNumber",
+            "command": "SerialNumber",
+            "telnet_cmd": "~XX353 1",
+            "expectedInterface": "Ok",
+            "expectedDdp": ""
+        },
+        {
+            "test_case" : "Get ModelName",
+            "command": "ModelName",
+            "telnet_cmd": "~XX151 1",
+            "expectedInterface": "Ok",
+            "expectedDdp": ""
+        }
+    ]
+}
+

@@ -1,0 +1,275 @@
+{
+    "description": "DDP Batch command mapping table(2 tables)",
+    "date": "2022/03/01",
+    "version": "v1.0.0",
+    "BatchCommandTableList": [
+        {
+          "tableDescription": " ==================== Batch Command 1 ==================== ",
+          "tableNumber" : 1,
+          "tableData": [
+            {
+              "description": "Current Source (connector)",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Current Source Status",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Current Source Resolution",
+              "command": "",
+              "dataLength": 20
+            },
+            {
+              "description": "< Use Config Control Setting > Display Mode",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Brightness",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "Contrast",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "Saturation",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "Sharpness",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "Zoom Value",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "Flash UI Gray-out Items",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Brightness Mode",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Lamp Hour",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "Mute (Audio)",
+              "command": "Mute",
+              "dataLength": 1
+            },
+            {
+              "description": "AV Mute (Audio & Video Mute)",
+              "command": "AVMute",
+              "dataLength": 1
+            },
+            {
+              "description": "< Use Config Control Setting > Power mode",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Volume (Audio)",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Freeze",
+              "command": "Freeze",
+              "dataLength": 1
+            }
+          ]
+        },
+        {
+          "tableDescription": " ==================== Batch Command 3 ==================== ",
+          "tableNumber" : 3,
+          "tableData": [
+            {
+              "description": "Current Power State",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Color Space",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "H. Position Value",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "V. Position Value",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "Auto Power Off Value",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "3D tech",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Background Color",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Wall Color",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Volume (Mic)",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Phase Value",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "BrilliantColor",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "Color Temp.",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "3D Format",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Sleep Timer",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "3D Sync Invert",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Dynamic Black Enabled",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "High Altitude",
+              "command": "HighAltitude",
+              "dataLength": 1
+            },
+            {
+              "description": "Display Mode Lock",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Direct Power On",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Audio Input Value",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Gamma",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Display Format",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Screen Type & DMD Type",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "V. Keystone",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "H. Keystone",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "V.Image Shift",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "H.Image Shift",
+              "command": "",
+              "dataLength": 2
+            },
+            {
+              "description": "Sleep Timer Always On",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Projector ID",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Remote Code",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Logo",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "3D->2D",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "Information Hide Enable",
+              "command": "",
+              "dataLength": 1
+            },
+            {
+              "description": "3D Mode",
+              "command": "",
+              "dataLength": 1
+            }
+          ]
+          
+        }
+    ]
+}
