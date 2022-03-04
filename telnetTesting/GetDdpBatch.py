@@ -6,7 +6,7 @@ def get_ddp_batch(command):
     PORT = "7000"
     TIMEOUT = 2 
 
-    tableIndex, dataIndex = getIndexByCommand(command)
+    tableIndex, dataIndex, dataLength = getIndexByCommand(command)
 
     cmd_ddp = "getDdpBatchData " + str(tableIndex)
     
@@ -18,12 +18,12 @@ def get_ddp_batch(command):
     retBatchData = "11 22 33 44 55 66 77 88 99 10 "
     retBatchData += "11 22 33 44 55 66 77 88 99 10 "
     retBatchData += "11 22 33 44 55 66 77 88 99 10 "
-    retBatchData += "11 22 33 44 55 66 77 88 99 10 "
-    retBatchData += "11 22 33 44 55 66 77 88 99 10 "
+    retBatchData += "11 22 33 44 55 66 77 88 99 32 "
+    retBatchData += "00 22 33 44 55 66 77 88 99 10 "
     retBatchData += "11 22 33 44 55 66 77 88 99 10 "
     retBatchData += "11 22 33 44 55 66 77 88 99 10 "
     retBatchData += "AA BB CC DD EE FF GG HH II JJ "
-    retBatchData += "00 22 33 44 55 66 77 88 99 10 "
+    retBatchData += "01 22 33 44 55 66 77 88 99 10 "
 
     '''
     with telnetlib.Telnet(HOST, PORT, TIMEOUT) as tn:
@@ -42,19 +42,23 @@ def get_ddp_batch(command):
         retBatchData = tn.read_very_eager().decode('ascii')
         print("read retBatchData:" + retBatchData)
     '''
-    return parsing_value(dataIndex, retBatchData)
+    return parsing_value(dataIndex, retBatchData, dataLength)
 
-def parsing_value(dataIndex, retBatchData):
-    print("dataIndex:" + str(dataIndex))
+def parsing_value(dataIndex, retBatchData, dataLength):
+    print("dataIndex:" + str(dataIndex) + ",dataLength:"+ str(dataLength))
     print("BatchData:" + retBatchData)
+    retData = ""
 
     if dataIndex !=  None:
-        arrayData = retBatchData.split(" ")
+        arrayData = retBatchData.strip().split(" ")
         print("arrayData length:" + str(len(arrayData)))
 
         if (dataIndex) < len(arrayData):
             #print(arrayData[dataIndex])
-            return arrayData[dataIndex]
+            for i in range(dataIndex, dataIndex + dataLength, 1):
+                retData = retData + arrayData[i] + " "
+
+            return retData.strip()  # remove leading and trailing whitespaces.
         else:
             print("\n>>> ERROR:dataIndex is not available:" + str(dataIndex))
             return None
@@ -65,6 +69,7 @@ def getIndexByCommand(command):
     jsonFile = "AllBatchCommandTable.json"
     retValue = None
     retTableNum = None
+    retLength = None
 
     with open(jsonFile, "r") as readit:
         data = json.load(readit)
@@ -79,7 +84,8 @@ def getIndexByCommand(command):
                     #print("Get this tempIndex!!!!!:" + str(tempIndex))
                     retValue = tempIndex
                     retTableNum = tableIndex
-                    return retTableNum, (retValue-1)
+                    retLength = cmd['dataLength']
+                    return retTableNum, (retValue-1), retLength
                     
     print("\n>>> ERROR:Command not found(" + jsonFile + "):" + command + "\n")
-    return retTableNum, retValue # None
+    return retTableNum, retValue, retLength # None

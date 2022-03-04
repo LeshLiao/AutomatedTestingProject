@@ -5,13 +5,8 @@ import json
 from Telnet_sender import send_cmd
 from GetDdpBatch import get_ddp_batch
 
-# Go to specific test case
-#pytest.myconfig_goto_cmd = "HighAltitude"
-
-# Run all Test
-pytest.myconfig_goto_cmd = ""
-
 # Initial Data 
+pytest.myconfig_goto_cmd = ""
 pytest.myflag_testcaseIndex = 0
 pytest.myflag_skip = True
 pytest.myconfig_projectID = "00"
