@@ -8,7 +8,7 @@ def send_cmd(projectid, telnet_cmd):
     command = telnet_cmd.replace("XX", projectid)
     
     ### For Test ###
-    #return "Ok123"
+    return "Ok123"
 
     with telnetlib.Telnet(HOST, PORT, TIMEOUT) as tn:
 
@@ -18,7 +18,7 @@ def send_cmd(projectid, telnet_cmd):
         print("sleep for 1s")
         time.sleep(1)
         
-        ret = tn.read_eager().decode('ascii')
+        ret = tn.read_very_eager().decode('ascii')
         print("telnet read:" + ret)
 
         return ret

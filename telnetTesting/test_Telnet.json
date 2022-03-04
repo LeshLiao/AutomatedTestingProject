@@ -3,19 +3,34 @@
     "description": "auto test config_0301_1508",
     "date": "2022/02/24",
     "version": "v1.0.0",
+    "config_skipTestUntilMet": "",
     "test_telnetCommand": [
+        {
+            "test_case" : "Set HighAltitude to On",
+            "command": "HighAltitude",
+            "telnet_cmd": "~XX101 1",
+            "expectedInterface": "P",
+            "expectedDdp": "01"
+        },
+        {
+            "test_case" : "Set HighAltitude to Off",
+            "command": "HighAltitude",
+            "telnet_cmd": "~XX101 0",
+            "expectedInterface": "P",
+            "expectedDdp": "00"
+        },
         {
             "test_case" : "Set AVMute on",
             "command": "AVMute",
             "telnet_cmd": "~XX02 1",
-            "expectedTelnet": "P",
+            "expectedInterface": "P",
             "expectedDdp": "01"
         },
         {
             "test_case" : "Set AVMute off",
             "command": "AVMute",
             "telnet_cmd": "~XX02 0",
-            "expectedTelnet": "P",
+            "expectedInterface": "P",
             "expectedDdp": "00"
         }
     ]
