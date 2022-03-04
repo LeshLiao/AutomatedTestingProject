@@ -20,28 +20,28 @@
             "expectedDdp": "00"
         },
         {
-            "test_case" : "Set AVMute on",
+            "test_case" : "skip Set AVMute on",
             "command": "AVMute",
             "telnet_cmd": "~XX02 1",
             "expectedInterface": "P",
             "expectedDdp": "01"
         },
         {
-            "test_case" : "Set AVMute off",
+            "test_case" : "skip Set AVMute off",
             "command": "AVMute",
             "telnet_cmd": "~XX02 0",
             "expectedInterface": "P",
             "expectedDdp": "00"
         },
         {
-            "test_case" : "Set Brightness(21) to 50",
+            "test_case" : "skip Set Brightness(21) to 50",
             "command": "Brightness",
             "telnet_cmd": "~XX21 50",
             "expectedInterface": "P",
             "expectedDdp": "32 00"
         },
         {
-            "test_case" : "Set Brightness(21) to 0",
+            "test_case" : "skip Set Brightness(21) to 0",
             "command": "Brightness",
             "telnet_cmd": "~XX21 0",
             "expectedInterface": "P",
