@@ -1,11 +1,9 @@
 import os,re,telnetlib,time
 
 def send_cmd(projectid, telnet_cmd):
-    #HOST = "192.168.50.113"
-    #PORT = "9000"
-    
-    HOST = "172.20.10.3"
-    PORT = "5000"
+    HOST = "192.168.50.113"
+    PORT = "9000"
+
     TIMEOUT = 2
 
     command = telnet_cmd.replace("XX", projectid)

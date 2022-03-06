@@ -13,7 +13,7 @@
             "expectedDdp": "01"
         },
         {
-            "test_case" : "Set HighAltitude to Off",
+            "test_case" : "skip Set HighAltitude to Off",
             "command": "HighAltitude",
             "telnet_cmd": "~XX101 0",
             "expectedInterface": "P",

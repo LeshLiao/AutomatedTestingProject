@@ -38,15 +38,14 @@ def test_telnetCommand(test_case, command, telnet_cmd, expectedInterface, expect
     
     time.sleep(1)
     
-    ''' For Test
     ret_Ddp = get_ddp_batch(command)
     print("DDP expected:" + expectedDdp)
     print("DDP return  :" + str(ret_Ddp))
-    '''
+    
     # === Assert ===
 
-    #if ret_telnet.find(expectedInterface) == 0:    # If found at begin of ret_telnet
-    if ret_telnet.find("Ok") == 0:                # For Test
+    if ret_telnet.find(expectedInterface) == 0:    # If found at begin of ret_telnet
+        #if ret_telnet.find("Ok") == 0:                # For Test
         assert True
     else:
         assert False
